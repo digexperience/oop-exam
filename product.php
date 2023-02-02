@@ -1,24 +1,31 @@
 <?php 
 
-Class Product
+Class Product {
 	private $name
 	private $description
 	private $price
 	private $srp
 	
-	function setName()
-
-	function setDescription()
-
-	function setPrice()
-	
-	function getName()
-
-	function getDescription()
-    
-	function getPrice()
-	
-	function computeSRP() {
-		price * 1.5;
+	function setName($name){
+	$this->name = $name
+}
+	function setDescription($description){
+	$this->description = $description
+}
+	function setPrice($price){
+	$this->price = $price
+}
+	function getName(){
+	return $this->name
+}
+	function getDescription(){
+    return $this->description
+}
+	function getPrice(){
+	return $this->price
+}
+	function computeSRP(){
+		$this->price * 1.5;
 	}
+}
 ?>
