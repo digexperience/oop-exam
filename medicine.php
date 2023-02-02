@@ -1,30 +1,30 @@
 <?php require "product.php";
 
-Class Medicine extends Products {
-	private $dose
-	private $type
-	private $expirationDate
+Class Medicine extends Product {
+	private $dose;
+	private $type;
+	private $expirationDate;
 	
 	function setDose($dose){
-	$this->dose = $dose
+	$this->dose = $dose;
 }
 	function setType($type){
-	$this->type = $type
+	$this->type = $type;
 }
 	function setExpirationDate($expirationDate){
-	$this->expirationDate = $expirationDate
+	$this->expirationDate = $expirationDate;
 }
 	function getDose(){
-	return $this->dose
+	return $this->dose;
 }
 	function getType(){
-    return $this->type
+    return $this->type;
 }
 	function getExpirationDate(){
-	return $this->expirationDate
+	return $this->expirationDate;
 }
 	function computeSRP(){
-		$this->price * 2;
+	return	$this->getPrice() * 2;
 	}
 }
 ?>
